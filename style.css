@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Cormorant Garamond',serif;
+background:#111;
+color:#fff;
+}
+
+nav{
+position:absolute;
+top:20px;
+width:100%;
+z-index:10;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:14px;
+letter-spacing:1px;
+text-transform:uppercase;
+}
+
+.hero{
+height:100vh;
+position:relative;
+overflow:hidden;
+}
+
+.hero-video{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.35);
+}
+
+.hero-content{
+position:absolute;
+left:8%;
+top:50%;
+transform:translateY(-50%);
+z-index:5;
+}
+
+.hero-content h1{
+font-size:80px;
+font-weight:300;
+line-height:0.9;
+}
+
+.hero-content p{
+margin-top:15px;
+font-size:18px;
+}
+
+.scroll-btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:35px;
+height:35px;
+border-radius:50%;
+background:white;
+color:black;
+text-decoration:none;
+margin-top:40px;
+font-size:22px;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:48px;
+margin-bottom:60px;
+font-weight:300;
+}
+
+.about{
+background:#111;
+}
+
+.about-content{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:80px;
+}
+
+.about-text{
+width:50%;
+font-size:20px;
+line-height:1.8;
+}
+
+.about-image{
+width:400px;
+}
+
+.about-image img{
+width:100%;
+}
+
+.portfolio-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:50px;
+}
+
+.portfolio-item img{
+width:100%;
+display:block;
+}
+
+.portfolio-item h3{
+margin-top:15px;
+font-weight:400;
+}
+
+.portfolio-item p{
+font-size:14px;
+}
+
+.portfolio-wide{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.portfolio-wide img{
+width:100%;
+}
+
+.price-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.price-card img{
+width:100%;
+height:320px;
+object-fit:cover;
+}
+
+.price-card h3{
+margin:15px 0;
+font-size:22px;
+}
+
+.price-card ul{
+list-style:none;
+line-height:1.8;
+}
+
+.contacts{
+background:#111;
+text-align:center;
+}
+
+.contacts h2{
+font-size:52px;
+font-weight:300;
+margin-bottom:50px;
+}
+
+.contacts-content{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:80px;
+}
+
+.divider{
+width:2px;
+height:150px;
+background:white;
+}
+
+footer{
+text-align:center;
+padding:25px;
+font-size:22px;
+background:#111;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:48px;
+}
+
+.about-content,
+.contacts-content{
+flex-direction:column;
+}
+
+.about-text,
+.about-image{
+width:100%;
+}
+
+.portfolio-grid,
+.price-grid,
+.portfolio-wide{
+grid-template-columns:1fr;
+}
+
+.section-title{
+font-size:34px;
+}
+}
+.contacts i{
+    margin-right:10px;
+    font-size:24px;
+    vertical-align:middle;
+}
+
+.contacts p{
+    margin:15px 0;
+    font-size:24px;
+}
+.contacts a{
+    color:white;
+    text-decoration:none;
+}
+
+.contacts a:hover{
+    opacity:.8;
+}
